@@ -1,57 +1,91 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Go Bumpr</title>
-
-  </script>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+#new {
+    background-image:url('img/rest1.jpeg');height: 432px;background-size: 100% 432px
+}
+#new_1{
+  background: transparent;
+  text-align:center;
+}
+#name1{
+  background:transparent;    margin-top: 100px;
+}
+#resname{
+  background:transparent; 
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;margin-top:10px;
+   
+}
+.row11{
+   overflow:auto;  height: 520px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%; border: 1px solid black;    height: 400px;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;margin-left:1px;margin-right:1px;}
+.col-6 {width: 50%;   }
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%; height: 532px;}
+.col-10 {width: 83.33%; height: 532px;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;   
+ }
+</style>
+<script src="javascript/main.js"></script>
+  
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
    
     <link href="boot/css/bootstrap.min.css" rel="stylesheet">
-    <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <style type="text/css" media="screen">
-    	element.style {
-    background-color: orange;
-    margin-top: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 333px;
-}
-
-    </style>
-  
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
 
 </head>
-<body>
+<body style="    background-color: bisque;">
 
-<div class="container-fluid">
- 
-    <div class="col-lg-12"  style="
-    background-color: orange;
-    margin-top: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 333px;
-" >
-    <input type="text" list="hosting-plan" id="name1" onchange="addListEntry()"/>
-    <datalist id="hosting-plan"></datalist>
- Restaurant name<input type="text" name="rest" onchange="identify()"/>
-  <button class="btn btn-info" id="s1">Search</button>
+<div class="col-12" id="new">
 
+<div id="new_1">
+<input type="text" list="hosting-plan" id="name1" placeholder="city" onchange="addListEntry()"/>
+<input type="text" id="resname" placeholder="Restaurant name" onchange="addListEntry1()"/>
+<button class="btn btn-info" id="s1" style="
+    background-color: blue;">Search</button>
+
+ <datalist id="hosting-plan"></datalist>
+    </div>
 </div> 
-    <script src="javascript/main.js"></script>
-   
-    
-  			<div class="row11">
-                
-                </div>
-               
-               
 
+<div class="row">
+
+<div class="col-9">
+ 
+
+  <div class="row11" ></div>
+  
+ 
+</div>
+<div class="col-3" id="a1" style="float:right; display: none;">
+ <b> <h4>Restaurant Information</h4></b>
+ 
+<div class="row122"></div>
+  
+</div>
 
 </div>
 
-    
 </body>
 </html>
- 
